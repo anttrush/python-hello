@@ -33,7 +33,8 @@ gunicorn==19.0.0
 `Procfile` 示例：
 
 ```
-web: gunicorn hello:app --log-file - --access-logfile - --error-logfile -
+#!/bin/bash
+gunicorn hello:app --log-file - --access-logfile - --error-logfile -
 ```
 
 ## 本地测试
